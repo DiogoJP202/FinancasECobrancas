@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*Others Mideas*/
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: #447884;
+    }
+    main{
+        width: 90%;
+        max-width: 900px;
+
+        margin: auto;
+        background-color: white;
+        box-shadow: 2px 2px 5px #000;
+    }
+}
