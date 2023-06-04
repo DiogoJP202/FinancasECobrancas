@@ -1,4 +1,4 @@
-document.addEventListener('mouseover', (event) => {
+document.addEventListener('mouseover', event => {
     element = event.target;
     if(element.classList.contains('linkPort')){
         const emoji = document.querySelector('#emoji');
@@ -9,7 +9,7 @@ document.addEventListener('mouseover', (event) => {
     }
 });
 
-document.addEventListener('mouseout', (event) => {
+document.addEventListener('mouseout', event => {
     element = event.target;
     if(element.classList.contains('linkPort')){
         const emoji = document.querySelector('#emoji');

@@ -8,51 +8,68 @@
 
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="styles/AuxíliarFinanceiro.css">
+    <link rel="stylesheet" href="styles/AuxíliarFinanceiroMobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Auxíliar Financeiro</h1>
-    <h2>Lucro, Venda, GA e RI</h2>
-    <table>
-        <button>+ Adicionar Mês +</button>
-        <button>Fazer conta</button>
-        <thead>
-            <tr>
-                <th>Meses</th>
-                <td>Mês 01</td>
-                <td>Mês 02</td>
-            </tr>
-            <tr>
-                <th>Vendas</th>
-                <td><input type="number" name="valorV1" id="IvalorV1" min="0"></td>
-                <td><input type="number" name="valorV2" id="IvalorV2" min="0"></td>
-            </tr>
-            <tr>
-                <th>D.V.</th>
-                <td><input type="number" name="valorDV1" id="IvalorDV1" min="0"></td>
-                <td><input type="number" name="valorDV2" id="IvalorDV2" min="0"></td>
-            </tr>
-            <tr>
-                <th>D.F.</th>
-                <td><input type="number" name="valorDF1" id="IvalorDF1" min="0"></td>
-                <td><input type="number" name="valorDF2" id="IvalorDF2" min="0"></td>
-            </tr>
-            <tr>
-                <th>Lucro</th>
-                <td><input type="number" name="valorl1" id="Ivalorl1" min="0"></td>
-                <td><input type="number" name="valorl2" id="Ivalorl2" min="0"></td>
-            </tr>
-            <tr>
-                <th colspan="2">% Meta</th>
-                <td><input type="number" name="valorM1" id="IvalorM1" min="0" max="100"></td>
-            </tr>
-        </thead>
-    </table>
-    <ul>
-        <li>D.V. = Dispensa Variável.</li>
-        <li>D.F. = Dispensa Fixa.</li>
-        <li>GA = Grau De Alavancagem</li>
-        <li>RI = Retorno De Investimento</li>
-    </ul>
+    <header>
+        <h1>Auxíliar Financeiro</h1>
+        <h2>Lucro, Venda, GA e RI</h2>
+    </header>
+    <main> 
+        <div id="botoes">
+            <button class="addM">+ Adicionar Mês +</button>
+            <button class="fazerC">Fazer conta</button>
+        </div>
+        <div id="table">
+            <table>
+                <tr class="meses">
+                    <th>Meses</th>
+                    <th>Mês 01</th>
+                    <th>Mês 02</th>
+                </tr>
+                <tr class="vendas">
+                    <th>Vendas</th>
+                    <td><input type="number" name="valorV1" id="IvalorV1" min="0"></td>
+                    <td><input type="number" name="valorV2" id="IvalorV2" min="0"></td>
+                </tr>
+                <tr class="dv">
+                    <th>D.V.</th>
+                    <td><input type="number" name="valorDV1" id="IvalorDV1" min="0"></td>
+                    <td><input type="number" name="valorDV2" id="IvalorDV2" min="0"></td>
+                </tr>
+                <tr class="df">
+                    <th>D.F.</th>
+                    <td><input type="number" name="valorDF1" id="IvalorDF1" min="0"></td>
+                    <td><input type="number" name="valorDF2" id="IvalorDF2" min="0"></td>
+                </tr>
+                <tr class="lucro">
+                    <th>Lucro</th>
+                    <td><input type="number" name="valorl1" id="Ivalorl1" min="0"></td>
+                    <td><input type="number" name="valorl2" id="Ivalorl2" min="0"></td>
+                </tr>
+                <tr class="meta">
+                    <th colspan="2">% Meta</th>
+                    <td><input type="number" name="valorM1" id="IvalorM1" min="0" max="100"></td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li><strong>D.V.</strong> = Dispensa Variável.</li>
+            <li><strong>D.F.</strong> = Dispensa Fixa.</li>
+            <li><strong>GA</strong> = Grau De Alavancagem</li>
+            <li><strong>RI</strong> = Retorno De Investimento</li>
+        </ul>
+        </main>
+    <footer>
+        <a href="https://github.com/DiogoJP202" target="_blank">
+            <i class="fa fa-github" style="font-size:20px"></i> Diogojp
+        </a>
+        <a href="https://www.instagram.com/ton.nyx3/">
+            <i class="fa fa-instagram" style="font-size:20px"></i> @ton.nyx3
+        </a> &#169  2023 Diogo Antonny, Inc.
+    </footer>
+    <script src="scripts/scriptAF.js"></script>
 </body>
 </html>
